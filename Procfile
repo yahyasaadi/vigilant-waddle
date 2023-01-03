@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Display2.py
+web: sh setup.sh && streamlit run def.py

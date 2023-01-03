@@ -39,9 +39,11 @@ with st.form("my_form"):
 	st.subheader("Data for Candidates.")
 	col8, col9, col10 = st.columns(3)
 
-	hon_osman = col8.number_input("Hon. Abdikarim Rati", min_value=0)
+	# hon_jofle = col10.number_input("Hon. Nassir Dolal", min_value=0)
+	hon_jofle = col8.number_input("Hon. Nassir Dolal", min_value=0)
+	# hon_osman = col8.number_input("Hon. Abdikarim Rati", min_value=0)
+	hon_osman = col10.number_input("Hon. Abdikarim Rati", min_value=0)
 	hon_dekow = col9.number_input("Hon. Dekow Barrow", min_value=0)
-	hon_jofle = col10.number_input("Hon. Nassir Dolal", min_value=0)
 	hon_malow = col8.number_input("Hon. Ibrahim Malow", min_value=0)
 	hon_muhiadin = col9.number_input("Hon. Muhiadin Abdirashid", min_value=0)
 	hon_feisal = col10.number_input("Hon. Abdifeisal Amin", min_value=0)
@@ -85,7 +87,7 @@ with st.form("my_form"):
                 "messagingSenderId": "173943917022",
                 "appId": "1:173943917022:web:be60dff753ea723038b54f",
                 "measurementId": "G-XRSDKRXW2G",
-                "serviceAccount":'aor-election-firebase-adminsdk-4js4d-6fe3fcd536.json'
+                "serviceAccount":'demoapp-607db-firebase-adminsdk-zsj0n-ed52918681.json'
             }
 			firebase = pyrebase.initialize_app(firebaseConfig)
 			db = firebase.database()
